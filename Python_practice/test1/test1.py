@@ -1,13 +1,11 @@
 from os import *
-import keyword
 
 
-class myclass:
-    i = 123456
-    def f(self):
-        return "hello world"
+num_list = []
+for num in range(2000,3201):
+    if (num%5 != 0) and (num%7 == 0):
+        num_list.append(str(num))
+    else:
+        num = num+1
 
-x = myclass()
-
-print("MyClass 类的属性 i 为：", x.i)
-print("MyClass 类的方法 f 输出为：", x.f())
+print("num is ", num_list)
